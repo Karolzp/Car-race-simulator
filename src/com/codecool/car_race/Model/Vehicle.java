@@ -14,6 +14,7 @@ public abstract class Vehicle {
 
     public  Vehicle(RaceController raceController){
         this.raceController = raceController;
+        actualSpeed = normalSpeed;
     }
 
     public String getName() {
@@ -27,7 +28,8 @@ public abstract class Vehicle {
     public void prepareForLap(){
 
     }
-    public void moveForAnHour(){
 
+    public void moveForAnHour(){
+        distanceTraveled += actualSpeed;
     }
 }

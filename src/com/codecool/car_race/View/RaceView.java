@@ -14,9 +14,18 @@ public class RaceView {
 //    }
 
     public void printRaceResults(List<Vehicle> vehicles){
-        for (int i =0; i < vehicles.size(); i++) {
-            System.out.print(vehicles.get(i).getName() + " ");
-            System.out.println(vehicles.get(i).getDistanceTraveled());
+        System.out.println();
+        for (int i = 0; i < vehicles.size(); i++) {
+            System.out.print(vehicles.get(i).getName() + " traveled ");
+            System.out.println(vehicles.get(i).getDistanceTraveled() + "km");
+        }
+    }
+
+    public  void printWinners(List<Vehicle> vehicles){
+        System.out.println();
+        System.out.println("The winner is : ");
+        for (int i = 0; i < vehicles.size(); i++) {
+            System.out.println("  ***> " + vehicles.get(i).getName() + " <***");
         }
     }
 }

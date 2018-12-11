@@ -11,4 +11,13 @@ public class Motorcycle extends  Vehicle {
         this.motorcycleNumber = motorcycleNumber;
         this.name = "Motorcycle " + String.valueOf(motorcycleNumber);
     }
+
+    @Override
+    public void prepareForLap(){
+        if(raceController.getWeather().isRaining()){
+            actualSpeed = normalSpeed - (5 + (int)(Math.random() * ((50 - 5) + 1)));
+        } else {
+            actualSpeed = normalSpeed;
+        }
+    }
 }

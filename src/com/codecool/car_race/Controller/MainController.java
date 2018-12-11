@@ -6,5 +6,6 @@ public class MainController {
         VehiclesController vehiclesController = new VehiclesController(raceController);
         raceController.simulateRace();
         raceController.getRaceView().printRaceResults(raceController.getVehicles());
+        raceController.getRaceView().printWinners(raceController.getWinners());
     }
 }
