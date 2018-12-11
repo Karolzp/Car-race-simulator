@@ -1,13 +1,11 @@
 package com.codecool.car_race;
 
 
+import com.codecool.car_race.Controller.MainController;
+
 public class Main {
 
-    /**
-     * Creates all the vehicles that will be part of this race.
-     */
-    private static void createVehicles(Race race) {
-    }
+
 
     /**
      * Entry point of our program. Creates one race instance and
@@ -18,10 +16,7 @@ public class Main {
      *             It is unused.
      */
     public static void main(String[] args) {
-        Race race = new Race();
-        createVehicles(race);
+        MainController mainController= new MainController();
 
-        race.simulateRace();
-        race.printRaceResults();
     }
 }
