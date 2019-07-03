@@ -8,6 +8,7 @@ The project was created during my education in Codecool.
 The goal was to:
 * practice OOP concept in Java
 * practice MVC (Model, View, Controller) design pattern
+* print results in terminal
 
 ## Used technology:
 * Java
